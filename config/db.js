@@ -1,9 +1,9 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 let cached = global.mongoose
 
 if(!cached){
-    cached = global.moose = { conn: null, promise: null}
+    cached = global.mongoo  se = { conn: null, promise: null}
 }
 
 async function connectDB() {
