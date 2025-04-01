@@ -8,6 +8,6 @@ const userSchema = new mongoose.Schema({
     cartItems: {type : Object, default:{}},
 },{minimize: false})
 
-const user = mongoose.models || mongoose.model('user',userSchema)
+const User = mongoose.models || mongoose.model('user',userSchema)
 
 export default User
